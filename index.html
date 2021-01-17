@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Simon game</title>
+
+    <!-- Link to favicon -->
+    <link
+      rel="shortcut icon"
+      href="Images/simon_gameicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+    <!--Link to Bootstrap 4 framework / no need for bootstrap use display property, auto values-->
+    
+    <!-- Link to CSS style sheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <img class="image" src="Images/simon_gameicon.png" alt="simon-game-logo" />
+    <h1 id="title">The Simon game</h1>
+    <p id="paragraph">Press Any key to start.</p>
+
+    <div class="container">
+      <div class="row">
+          <button id="green" class="btn green"></button>     <!--Buttons beacuse we're pressing it, we could use a div with type button-->
+          <button id="yellow" class="btn yellow"></button>
+      </div>
+      <div class="row">
+          <button id="red" class="btn red"></button>
+          <button id="blue" class="btn blue"></button>
+      </div>
+    </div>
+
+    <!-- Link to JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Link to external Javascript file -->
+    <script src="game.js" charset="utf-8"></script>
+  </body>
+</html>
